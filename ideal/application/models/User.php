@@ -1,4 +1,4 @@
 <?php
 class User extends Model{
-    public $name = 'Valeriy';
+	public $name = 'Valeriy';
 }

@@ -1,10 +1,11 @@
 <?php
-//define('ROOT', dirname(__FILE__) . DIRECTORY_SEPARATOR);
-//define('FRAME', dirname(__FILE__) . DIRECTORY_SEPARATOR . 'frame' . DIRECTORY_SEPARATOR);
-//define('APP', dirname(__FILE__) . DIRECTORY_SEPARATOR . 'app' . DIRECTORY_SEPARATOR);
+define('ROOT', dirname(__FILE__) . DIRECTORY_SEPARATOR);
+define('FRAME', dirname(__FILE__) . DIRECTORY_SEPARATOR . 'frame' . DIRECTORY_SEPARATOR);
+define('APP', dirname(__FILE__) . DIRECTORY_SEPARATOR . 'app' . DIRECTORY_SEPARATOR);
+define('CONFIG', APP . 'config' . DIRECTORY_SEPARATOR);
 //include FRAME . 'frame.php';
 //
-//App::gi('App')->start();
+//App::gi()->start();
 //var_dump(App::gi());
 
 //<?php
@@ -15,8 +16,8 @@
 //app::gi()->start();
 
 
-define('ROOT',dirname(__FILE__).'/');
-define('IDEAL',dirname(__FILE__).'/frame/');
-define('APP',dirname(__FILE__).'/app/');
-include IDEAL.'frame.php';
+//define('ROOT',dirname(__FILE__).'/');
+//define('IDEAL',dirname(__FILE__).'/frame/');
+//define('APP',dirname(__FILE__).'/app/');
+include FRAME.'frame.php';
 app::gi()->start();

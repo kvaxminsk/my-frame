@@ -1,19 +1,7 @@
 <?php
-
-class UserController extends Controller {
-    public function index()
-    {
+class UserController extends Controller{
+    function index(){
         $model = new User();
-
-        include ROOT .'app/views/user/index.php';
+        include ROOT.'app/views/user/index.php';
     }
 }
-
-/*
-<?php
-class UserController extends Controller{
-    function actionIndex(){
-        $model = new User();
-        include ROOT.'application/views/user/index.php';
-    }
-}*/
