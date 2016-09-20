@@ -1,19 +1,23 @@
 <?php
 
-
+//class App extends Singleton{
+//    public $config = null;
+//    function start(){
+//        $this->config = new Model(include APP.'config.php');
+//        Router::gi()->parse();
+//        $controller = app::gi(Router::gi()->controller.'Controller');
+//        $controller->__call('action'.Router::gi()->action);
+//    }
+//}
 class App extends Singleton
 {
-    public $config;
+    public $config = null;
     public function start()
     {
 
-        $this->config = include CONFIG .'config.php';
+        $this->config = new Model(include CONFIG.'config.php');
         Router::gi()->parse();
         $controller = app::gi(Router::gi()->controller . 'Controller');
-//        var_dump(Router::gi()->controller . 'Controller');
-//        die();
-//        var_dump(Router::gi()->controller.'Controller');die();
-//        $class_methods = get_class_methods(App::gi(Router::gi()->controller.'Controller'));
         $controller->__call( Router::gi()->action);
     }
 }

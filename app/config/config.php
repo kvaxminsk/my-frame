@@ -7,6 +7,6 @@ return array(
     'default_module' => 'index',
     'default_controller' => 'index',
     'default_action' => 'index',
-//    'db' => include 'db.php',
+    'db' => include 'db.php',
     // ...
 );
